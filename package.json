@@ -7,18 +7,22 @@
     "start-dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "npm set-script prepare 'husky install'"
+    "lint": "next lint"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.11",
+    "babel-preset-next": "^1.4.0",
+    "lodash": "^4.17.21",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.171",
     "@types/react": "17.0.15",
+    "@types/uuid": "^8.3.1",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
     "husky": "^7.0.1",

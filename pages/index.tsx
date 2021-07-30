@@ -1,9 +1,3 @@
-const Home = () => {
-  return (
-   <div>
-     hola
-   </div>
-  )
-}
+import Creator from './Creator'
 
-export default Home
+export default Creator
