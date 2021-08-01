@@ -3,8 +3,8 @@ import React from 'react'
 const Tick = () => (
   <svg
     version="1.1"
-    width="16px" height="16px" viewBox="0 0 594.149 594.149"
-    style={{ marginLeft: 4 }}
+    width="14px" height="14px" viewBox="0 0 594.149 594.149"
+    style={{ marginLeft: 0}}
   >
     <g>
       <g id="done-all">

@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import { WrapperTypes } from './types'
 
 export const Wrapper = styled.div<WrapperTypes>`
-  position: relative;
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   justify-content: ${({ owner }) => owner === 'SENDER' ? 'flex-end' : 'flex-start'};
+  position: relative;
 `
 
 const getTriangle = (owner: string, isFirstMessage: boolean) => {
@@ -19,54 +20,55 @@ const getTriangle = (owner: string, isFirstMessage: boolean) => {
 }
 
 export const TextWrapper = styled.div<WrapperTypes>`
-  position: relative;
-  border-radius: ${({ owner, isFirstMessage }) => getTriangle(owner, isFirstMessage)};
-  padding: 8px 12px;
-  text-align: left;
-  font-size: 16px;
   background: ${({ owner }) => owner === "SENDER" ? '#dafebe' : 'white'};
+  border-bottom: 1px solid #dbdbdb;
+  border-radius: ${({ owner, isFirstMessage }) => getTriangle(owner, isFirstMessage)};
+  font-size: 14px;
   margin-bottom: 2px;
   margin-top: ${({ isFirstMessage }) => isFirstMessage && '6px'};
-  min-width: 120px;
   max-width: 90%;
-  border-bottom: 1px solid #dbdbdb;
+  min-width: 120px;
+  padding: 8px 12px;
+  position: relative;
+  text-align: left;
 `
 
 export const TextLabel = styled.div`
-  padding-right: 68px;
   line-height: 18px;
+  padding-right: 68px;
 `
 
 export const HourWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -12px;
+  opacity: 0.4;
   position: absolute;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  opacity: 0.4;
-  margin-top: -14px;
 `
 
 export const Hour = styled.span`
-  font-size: 12px;
+  font-size: 11px;
+  margin-right: 4px;
 `
 
 export const SenderTriangle = styled.div`
-  clip-path: polygon(100% 0, 0% 100%, 0 0);
   background: #dafebe;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
   height: 10px;
-  width: 8px;
   position: absolute;
   right: -8px;
-  top: 6px
+  top: 6px;
+  width: 8px;
 `
 
 export const ReceiverTriangle = styled.div`
-  clip-path: polygon(100% 1%, 0 0, 100% 100%);
   background: white;
+  clip-path: polygon(100% 1%, 0 0, 100% 100%);
   height: 10px;
-  width: 8px;
-  position: absolute;
   left: -8px;
-  top: 6px
+  position: absolute;
+  top: 6px;
+  width: 8px;
 `

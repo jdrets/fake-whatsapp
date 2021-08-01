@@ -4,7 +4,7 @@ import {Wrapper, TextWrapper, HourWrapper, Hour, TextLabel, SenderTriangle, Rece
 import {TextTypes} from './types'
 import Tick from './components/Tick'
 
-const Text: FunctionComponent<TextTypes> = ({onDelete, owner, text, isFirstMessage}) => {
+const Text: FunctionComponent<TextTypes> = ({onDelete, owner, text, isFirstMessage, hour}) => {
   const isReceiver = owner === 'RECEIVER'
   const isSender = owner === 'SENDER'
 
@@ -14,7 +14,7 @@ const Text: FunctionComponent<TextTypes> = ({onDelete, owner, text, isFirstMessa
       <TextWrapper owner={owner} isFirstMessage={isFirstMessage}>
         <TextLabel>{text}</TextLabel>
         <HourWrapper>
-          <Hour>13:30</Hour>
+          <Hour>{hour}</Hour>
           {isSender && <Tick/>}
         </HourWrapper>
       </TextWrapper>

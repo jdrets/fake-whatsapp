@@ -1,20 +1,40 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.section<any>`
-  background: #f1f1f1;
-  background-image: url('/images/bg.png') ;
+export const CreatorWrapper = styled.section`
+  background-image: url('/images/bg.png');
   background-position: center;
   background-size: cover;
-  padding: 32px;
+`
+
+export const ButtonWrapper  = styled.section`
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  gap: 8px
+`
+
+export const Button  = styled.button`
+  background: ${({ theme }) => theme.colors.primary};
+  border-radius: 24px;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-weight: 600;
+  padding: 12px 24px;
 `
 
 export const PlaceholdersWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 24px;
+  padding: 12px;
 `
 
 export const MessagesWrapper = styled.div`
-  min-height: 320px;
+  background-image: url('/images/bg.png');
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 220px);
+  padding: 12px;
 `
