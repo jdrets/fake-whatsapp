@@ -1,4 +1,4 @@
-import React, { useState, FunctionComponent, ChangeEvent, useRef } from 'react'
+import React, { useState, FunctionComponent, ChangeEvent } from 'react'
 
 import { Input } from './styles'
 import { PlaceholderTypes } from './types'

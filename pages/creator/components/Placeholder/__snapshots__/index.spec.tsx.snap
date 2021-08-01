@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Placeholder /> Should match with a snapshot when owner is RECEIVER 1`] = `
+<div>
+  <input
+    class="styles__Input-sc-1cvmjof-0 ncbnf"
+    placeholder="Agregar texto"
+    type="text"
+    value=""
+  />
+</div>
+`;

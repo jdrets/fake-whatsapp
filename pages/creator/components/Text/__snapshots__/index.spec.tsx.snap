@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> Should match with a snapshot when isFirstMessage is false 1`] = `
+<div>
+  <div
+    class="styles__Wrapper-sc-1any8y4-0 kJrgLD"
+  >
+    <div
+      class="styles__TextWrapper-sc-1any8y4-1 jXxrWW"
+    >
+      <div
+        class="styles__TextLabel-sc-1any8y4-2 kjuqUo"
+      >
+        dummy text
+      </div>
+      <div
+        class="styles__HourWrapper-sc-1any8y4-3 cfNxXb"
+      >
+        <span
+          class="styles__Hour-sc-1any8y4-4 eSNUDC"
+        >
+          13:00
+        </span>
+        <svg
+          height="14px"
+          style="margin-left: 0px;"
+          version="1.1"
+          viewBox="0 0 594.149 594.149"
+          width="14px"
+        >
+          <g>
+            <g
+              id="done-all"
+            >
+              <path
+                d="M448.8,161.925l-35.7-35.7l-160.65,160.65l35.7,35.7L448.8,161.925z M555.899,126.225l-267.75,270.3l-107.1-107.1 l-35.7,35.7l142.8,142.8l306-306L555.899,126.225z M0,325.125l142.8,142.8l35.7-35.7l-142.8-142.8L0,325.125z"
+              />
+            </g>
+          </g>
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Text /> Should match with a snapshot when owner is RECEIVER 1`] = `
+<div>
+  <div
+    class="styles__Wrapper-sc-1any8y4-0 cDpuqU"
+  >
+    <div
+      class="styles__ReceiverTriangle-sc-1any8y4-6 guGaBl"
+    />
+    <div
+      class="styles__TextWrapper-sc-1any8y4-1 bOBFgJ"
+    >
+      <div
+        class="styles__TextLabel-sc-1any8y4-2 kjuqUo"
+      >
+        dummy text
+      </div>
+      <div
+        class="styles__HourWrapper-sc-1any8y4-3 cfNxXb"
+      >
+        <span
+          class="styles__Hour-sc-1any8y4-4 eSNUDC"
+        >
+          13:00
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Text /> Should match with a snapshot when owner is SENDER 1`] = `
+<div>
+  <div
+    class="styles__Wrapper-sc-1any8y4-0 kJrgLD"
+  >
+    <div
+      class="styles__TextWrapper-sc-1any8y4-1 lfLzFY"
+    >
+      <div
+        class="styles__TextLabel-sc-1any8y4-2 kjuqUo"
+      >
+        dummy text
+      </div>
+      <div
+        class="styles__HourWrapper-sc-1any8y4-3 cfNxXb"
+      >
+        <span
+          class="styles__Hour-sc-1any8y4-4 eSNUDC"
+        >
+          13:00
+        </span>
+        <svg
+          height="14px"
+          style="margin-left: 0px;"
+          version="1.1"
+          viewBox="0 0 594.149 594.149"
+          width="14px"
+        >
+          <g>
+            <g
+              id="done-all"
+            >
+              <path
+                d="M448.8,161.925l-35.7-35.7l-160.65,160.65l35.7,35.7L448.8,161.925z M555.899,126.225l-267.75,270.3l-107.1-107.1 l-35.7,35.7l142.8,142.8l306-306L555.899,126.225z M0,325.125l142.8,142.8l35.7-35.7l-142.8-142.8L0,325.125z"
+              />
+            </g>
+          </g>
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+          <g />
+        </svg>
+      </div>
+    </div>
+    <div
+      class="styles__SenderTriangle-sc-1any8y4-5 kOEvHj"
+    />
+  </div>
+</div>
+`;
