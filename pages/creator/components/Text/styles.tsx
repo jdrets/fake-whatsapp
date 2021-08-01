@@ -8,14 +8,25 @@ export const Wrapper = styled.div<WrapperTypes>`
   justify-content: ${({ owner }) => owner === 'SENDER' ? 'flex-end' : 'flex-start'};
 `
 
+const getTriangle = (owner: string, isFirstMessage: boolean) => {
+  if (owner === 'SENDER' && isFirstMessage) {
+    return '12px 0 12px 12px'
+  }
+  if (owner === 'RECEIVER' && isFirstMessage) {
+    return '0 12px 12px 12px'
+  }
+  return '12px'
+}
+
 export const TextWrapper = styled.div<WrapperTypes>`
   position: relative;
-  border-radius: 12px;
+  border-radius: ${({ owner, isFirstMessage }) => getTriangle(owner, isFirstMessage)};
   padding: 8px 12px;
   text-align: left;
   font-size: 16px;
   background: ${({ owner }) => owner === "SENDER" ? '#dafebe' : 'white'};
-  margin-bottom: 8px;
+  margin-bottom: 2px;
+  margin-top: ${({ isFirstMessage }) => isFirstMessage && '6px'};
   min-width: 120px;
   max-width: 90%;
   border-bottom: 1px solid #dbdbdb;
@@ -40,12 +51,22 @@ export const Hour = styled.span`
   font-size: 12px;
 `
 
-export const SenderTriangle = styled.div<WrapperTypes>`
+export const SenderTriangle = styled.div`
   clip-path: polygon(100% 0, 0% 100%, 0 0);
   background: #dafebe;
-  height: 14px;
-  width: 14px;
+  height: 10px;
+  width: 8px;
   position: absolute;
-  right: -12px;
-  top: 0
+  right: -8px;
+  top: 6px
+`
+
+export const ReceiverTriangle = styled.div`
+  clip-path: polygon(100% 1%, 0 0, 100% 100%);
+  background: white;
+  height: 10px;
+  width: 8px;
+  position: absolute;
+  left: -8px;
+  top: 6px
 `

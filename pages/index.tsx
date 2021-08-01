@@ -1,3 +1,3 @@
-import Creator from './Creator'
+import Creator from './creator'
 
 export default Creator
