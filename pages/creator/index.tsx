@@ -9,7 +9,7 @@ import {
   MessagesWrapper,
   Button,
   ButtonWrapper,
-  DevicesWrapper, DeviceButton
+  DevicesWrapper,
 } from './styles'
 import Placeholder from './components/Placeholder'
 import Text from './components/Text'
@@ -89,7 +89,7 @@ const Creator = () => {
       <ButtonWrapper>
         {!image && <Button onClick={() => takeScreenshot()}>Crear captura</Button>}
         {image && <Button onClick={() => clear()}>Modificar</Button>}
-        {image && <Button onClick={reset}>Crear nueva conversación</Button>}
+        <Button onClick={reset}>Crear nueva conversación</Button>
       </ButtonWrapper>
     </>
   )

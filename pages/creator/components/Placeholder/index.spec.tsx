@@ -57,6 +57,26 @@ describe('<Placeholder />', () => {
     expect(onSubmitMock).toHaveBeenCalled()
   })
 
+  test('Should call onSubmit function when enter button is pressed', async () => {
+    const onSubmitMock = jest.fn()
+    const { getByPlaceholderText } = setup({
+      onSubmit: onSubmitMock
+    })
+    const input = getByPlaceholderText('Agregar texto')
+
+    fireEvent.change(input, {
+      target: {
+        value: 'some dummy value'
+      }
+    })
+
+    fireEvent.keyDown(input, {
+      key: 'Enter'
+    })
+
+    expect(onSubmitMock).toHaveBeenCalled()
+  })
+
   test('Should not call onSubmit function when text state is null', async () => {
     const onSubmitMock = jest.fn()
     const { getByPlaceholderText } = setup({

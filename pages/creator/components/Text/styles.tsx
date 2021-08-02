@@ -21,7 +21,7 @@ const getTriangle = (owner: string, isFirstMessage: boolean) => {
 
 export const TextWrapper = styled.div<WrapperTypes>`
   background: ${({ owner }) => owner === "SENDER" ? '#dafebe' : 'white'};
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: ${({ owner, isFirstMessage }) => getTriangle(owner, isFirstMessage)};
   font-size: 14px;
   margin-bottom: 2px;
